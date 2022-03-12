@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding:0;
+    flex-direction: column;
+    font-family: "Inter";
+}
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+h2 {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+p {
+    font-weight: 100;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+header > h1 {
+    width: 100;;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.nav > p {
+    margin: 20px 60px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: space-between;
+}
+
+.mission-statement {
+    background-image: url("./missionstatementbackground.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.mission-statement-text {
+    display: flex;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    padding: 20px 0;
+}
+.mission-statement > h2, .mission-statement p {
+    
+    background-color: white;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+.portfolio {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    width: 30%;
+    height: 200px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content > img {
+    width: 40%;
+    height: auto;
+    margin-right: 20%;
+}
+
+.employees {
+    background-image: url("./employeebackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.employee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color:white;
+    opacity: 1;
+}
+
+.employee > p {
+    width: 200px;
+    text-align: center;
+}
+.employee > img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contact {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact > h2{
+    margin: 30px auto;
+}
+
+.contact > p {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1070px){
+   
+    .content {
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    .nav > p {
+        margin: 20px 20px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .content {
+        width: 100%;
+        justify-content: end;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .content > img {
+        height: 80%;
+        width: auto;
+    }
+
+    #plane {
+        padding-right: 35px;
+    }
+
+    #valet {
+        padding-right: 18px;
+    }
+
+    #car {
+        padding-left: 20px;
+    }
+    #tires {
+        padding-right: 10px;
+    }
+    #lanes {
+        padding-right: 10px;
+    }
+
+    .employee {
+        width: 1fr;
+        height: 3fr;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .employees {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .employee {
+        display: grid;
+        width: 90%;
+        grid-template-columns: 2fr 1fr 1fr;
+        column-gap: 10px;
+        align-content: center;
+        margin: 20px auto;
+    }
+
+    .employee > h3 {
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .nav > p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .content {
+        flex-direction: column;
+        margin: 10px auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content > img {
+        height: 150px;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    #car, #plane, #lanes, #tires, #valet {
+        padding:0 0;
+    }
+
+    p {
+        font-size: 1em;
+    }
+    
+    .employee {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        margin: 20px auto;
+        justify-items: center;
+    }
+
+    .employee > p, .employee > h3 {
+        width: 50%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.75em;
+        text-align: center;
+    }
+    
+}
